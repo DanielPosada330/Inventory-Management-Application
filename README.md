@@ -8,8 +8,8 @@ FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFE
 For this project, you will use the Integrated Development Environment (IDE) link in the web links section of this assessment to install the IDE, IntelliJ IDEA (Ultimate Edition). All relevant links are on the course page. Please refer to the course of study for specific links. You will sign up for a free student license using your WGU.edu email address. Please see the “IntelliJ Ultimate Edition Instructions” attachment for instructions on how do this. Next you will download the “Inventory Management Application Template Code” provided in the web links section and open it in IntelliJ IDEA (Ultimate Edition). You will upload this project to a private external GitLab repository and backup regularly. As a part of this, you have been provided with a base code (starting point). 
 
 
-## Shop Type, Product, and Parts
-The shop type for this project will be for a chess board game. The product will be the chess boardgame itself, while the parts are as follows: board to play on, pieces to play with, user manual with information on how to play the game and pertinent information, and finally the packaging that contains everything.
+## Shop Type, Products and Parts
+The shop type for this project will be for board games. The products will be Chess, Checkers, Go, Monopoly and Scrabble. The parts are as follows: board to play on, pieces to play with, user manual with information on how to play the game and pertinent information, dice, and finally the packaging that contains everything.
 ## Rubric Instructions  
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
@@ -21,8 +21,10 @@ Changes:
 2) mainscreen.html, Line 19: updated title from "Shop" to "Main Chess Shop Menu".
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-
-
+1) Create about.html
+2) about.html, Lines 5-12: Add html template information 
+3) about.html, Line 14: Changed title to "About".
+4) 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
