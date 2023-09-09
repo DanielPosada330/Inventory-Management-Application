@@ -17,8 +17,8 @@ C.  Customize the HTML user interface for your customer’s application. The use
 Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required.
 
 Changes: 
-1) mainscreen.html, Line 14: updated tab title from "My Bicycle Shop" to "Chess Game 956".
-2) mainscreen.html, Line 19: updated title from "Shop" to "Main Chess Shop Menu".
+1) mainscreen.html, Line 14: updated tab title from "My Bicycle Shop" to "Aldani Board Games".
+2) mainscreen.html, Line 19: updated title from "Shop" to "Main Board Game Order Menu".
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 1) Create about.html
