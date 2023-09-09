@@ -24,7 +24,7 @@ D.  Add an “About” page to the application to describe your chosen customer�
 1) Create about.html
 2) about.html, Lines 5-12: Add html template information 
 3) about.html, Line 14: Changed title to "About".
-4) 
+4) about.html, Line 19-21: Added paragraphs about company mission and goals to customer.
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
