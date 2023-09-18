@@ -20,7 +20,7 @@ public class AboutPageController {
     @Autowired
     private ApplicationContext context;
 
-    @GetMapping("/aboutPage")
+    @GetMapping("/showAboutPage")
     public String showAboutPage(){
         return "about";
 

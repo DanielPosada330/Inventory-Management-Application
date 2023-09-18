@@ -26,6 +26,10 @@ D.  Add an “About” page to the application to describe your chosen customer�
 3) about.html, Line 14: Changed title to "About".
 4) about.html, Line 19-21: Added paragraphs about company mission and goals to customer.
 5) Create AboutPageController.java
+6) mainscreen.html, Line 89: Add About Page Header
+7) mainscreen.html, Line 90: Add About Page Button Link
+8) about.html, Line 22: Add Main Screen Header
+9) about.html, Line 23: Add Main Screen Button Link
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
 
