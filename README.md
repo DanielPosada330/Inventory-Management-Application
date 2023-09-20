@@ -32,7 +32,7 @@ D.  Add an “About” page to the application to describe your chosen customer�
 9) about.html, Line 23: Add Main Screen Button Link
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
-
+1) BootStrapData.java, Lines 64-73: Added board game products to product repository.
 
 Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
 
