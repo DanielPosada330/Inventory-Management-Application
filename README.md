@@ -9,7 +9,7 @@ For this project, you will use the Integrated Development Environment (IDE) link
 
 
 ## Shop Type, Products and Parts
-The shop type for this project will be for board games. The products will be Chess, Checkers, Go, Monopoly and Scrabble. The parts are as follows: board to play on, pieces to play with, user manual with information on how to play the game and pertinent information, dice, and finally the packaging that contains everything.
+The shop type for this project will be for board games. The products will be Chess, Checkers, Go, Monopoly and Scrabble. The parts are as follows: board to play on, pieces to play with, user manual with information on how to play the game and pertinent information, dice, and finally the packaging material.
 ## Rubric Instructions  
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
@@ -32,8 +32,9 @@ D.  Add an “About” page to the application to describe your chosen customer�
 9) about.html, Line 23: Add Main Screen Button Link
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
-1) BootStrapData.java, Lines 64-73: Added board game products to product repository.
-
+1) 
+2) BootStrapData.java, Lines 42-76: Added outsourced part of packaging materials and dice to list.
+3) BootStrapData.java, Lines 64-73: Added board game products to product repository.
 Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
 
 
