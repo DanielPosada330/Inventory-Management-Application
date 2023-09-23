@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class AboutPageController {
-    @Autowired
-    private ApplicationContext context;
 
     @GetMapping("/showAboutPage")
     public String showAboutPage(){
