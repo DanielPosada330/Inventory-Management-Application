@@ -90,6 +90,19 @@ public class Product implements Serializable {
     public String toString(){
         return this.name;
     }
+
+    //Method to reduce inventory if product is purchased
+    public boolean buyProduct() {
+        //If inventory is above or equal to 1, then the inventory will decrease by 1.
+        if (this.inv >= 1 ) {
+            this.inv--;
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
