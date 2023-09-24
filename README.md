@@ -33,9 +33,9 @@ D.  Add an “About” page to the application to describe your chosen customer�
 
 E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 1) BootStrapData.java, Line 3: Added import InHouse Part class
-2) BootStrapData.java, Lines 48-75: Added InHouse parts of board piece, game pieces, and user manual to list.
-3) BootStrapData.java, Lines 76-96: Added outsourced parts of dice and packaging materials.
-4) BootStrapData.java, Lines 98-107: Added products to product list.
+2) BootStrapData.java, Lines 48-80: Added InHouse parts of board piece, game pieces, and user manual to list.
+3) BootStrapData.java, Lines 82-106: Added outsourced parts of dice and packaging materials.
+4) BootStrapData.java, Lines 108-119: Added products to product list.
 
 Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
 
@@ -75,18 +75,25 @@ G. Modify the parts to track maximum and minimum inventory by doing the followin
 1) Update application.properties file, Line 6: Rename file from "spring-boot-h2-db102" to "WGUShopManagementDB".
 
 •   Modify the code to enforce that the inventory is between or at the minimum and maximum value.
-1) Part.java file, Lines 112-119: Added method to enforce that the inventory is between or at the minimum and maximum value.
+1) Part.java file, Lines 113-121: Added method to enforce that the inventory is between or at the minimum and maximum value, and to return boolean value to check if method was used.
 2) InHousePartServiceImpl.java, Line 54: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
 3) OutsourcedPartServiceImpl.java, Line 52: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
 
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
 •   Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
+1) AddInHousePartController.java, Lines 45-47: Added error message for low inventory when adding and updating parts.
+2) AddOutsourcedPartController.java, Lines 46-48: Added error message for low inventory when adding and updating parts.
 
 •   Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.
+1) EnufPartsValidator.java, Line 36: Insert additional checks in if statement to account for possible change when adding or updating products lowers part inventory below minimum.
+2) ValidEnufParts.java, Line 20: Change error message to introduce better clarity.
+3) Create belowMinInv.html, Lines 1-12: Added html template to show error should the desired part selection go below the minimum inventory amount.
+4) Create aboveMaxInv.html, Lines 1-12: Added html template to show error should the desired part selection go above the maximum inventory amount.
 
 •   Display error messages when adding and updating parts if the inventory is greater than the maximum.
-
+1) AddInHousePartController.java, Lines 48-50: Added error message for greater than maximum inventory when adding and updating parts.
+2) AddOutsourcedPartController.java, Lines 49-51: Added error message for greater than maximum inventory when adding and updating parts.
 
 I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
