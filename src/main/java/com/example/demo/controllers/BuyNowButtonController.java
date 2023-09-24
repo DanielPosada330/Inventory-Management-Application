@@ -29,8 +29,8 @@ public class BuyNowButtonController {
         boolean purchaseConfirmation = finalProductAmount.buyProduct();
         if ( purchaseConfirmation ) {
             productService.save(finalProductAmount);
-            return "purchaseConfirmationSuccessful";
+            return "purchaseConfirmationPage";
         }
-        return "purchaseError";
+        return "purchaseErrorPage";
     }
 }
