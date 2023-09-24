@@ -103,4 +103,4 @@ I.  Add at least two unit tests for the maximum and minimum fields to the PartTe
 4) PartTest.java file, Lines 131-139: Created Unit test for setMaxInv (set maximum field).
 
 J.  Remove the class files for any unused validators in order to clean your code.
-
+1) DeletePartValidator.java file: No usages detected. Removed to clean up redundant code.
