@@ -110,12 +110,15 @@ public abstract class Part implements Serializable {
         return this.name;
     }
     //Enforce inventory is within valid range
-    public void validInvAmount() {
+    public boolean validInvAmount() {
         if (this.inv < this.minInv) {
             this.inv = this.minInv;
+            return true;
         } else if (this.inv > this.maxInv ) {
             this.inv = this.maxInv;
+            return false;
         }
+        else return false;
     }
     @Override
     public boolean equals(Object o) {
