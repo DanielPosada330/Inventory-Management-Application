@@ -54,6 +54,8 @@ public class BootStrapData implements CommandLineRunner {
             board.setName("Playing Board Piece");
             board.setPrice(5.0);
             board.setInv(10);
+            board.setMinInv(0);
+            board.setMaxInv(100);
             partRepository.save(board);
 
             // Game pieces added to in house parts list.
@@ -62,6 +64,8 @@ public class BootStrapData implements CommandLineRunner {
             game_pieces.setName("Game Pieces");
             game_pieces.setPrice(5.0);
             game_pieces.setInv(10);
+            game_pieces.setMinInv(0);
+            game_pieces.setMaxInv(100);
             partRepository.save(game_pieces);
 
             // Board piece added to in house parts list.
@@ -70,6 +74,8 @@ public class BootStrapData implements CommandLineRunner {
             user_manual.setName("User Manual");
             user_manual.setPrice(5.0);
             user_manual.setInv(10);
+            user_manual.setMinInv(0);
+            user_manual.setMaxInv(100);
             partRepository.save(user_manual);
         }
 
@@ -83,6 +89,8 @@ public class BootStrapData implements CommandLineRunner {
             dice.setInv(10);
             dice.setPrice(5.0);
             dice.setId(100L);
+            dice.setMinInv(0);
+            dice.setMaxInv(100);
             outsourcedPartRepository.save(dice);
 
             // Packaging Material added to outsourced parts list.
@@ -92,6 +100,8 @@ public class BootStrapData implements CommandLineRunner {
             packaging.setInv(10);
             packaging.setPrice(5.0);
             packaging.setId(200L);
+            packaging.setMinInv(0);
+            packaging.setMaxInv(100);
             outsourcedPartRepository.save(packaging);
         }
 
