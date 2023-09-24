@@ -60,15 +60,24 @@ F.  Add a “Buy Now” button to your product list. Your “Buy Now” button m
 G. Modify the parts to track maximum and minimum inventory by doing the following:
 
 •   Add additional fields to the part entity for maximum and minimum inventory.
+1) Part.java file, Lines 31-34: Create minInv and maxInv variables to ensure inventory does not drop below zero.
+2) Part.java file, Lines 88-95: Create setters and getters for both min and max inventory variables.
+3) Update Part.java file, Lines 48,49,57 and 58: Added constructors for minInv and maxInv with values of 0 and 100, respectively
 
 •   Modify the sample inventory to include the maximum and minimum fields.
+1) BootStrapData.java, Lines 57 & 58, 67 & 68, 77 & 78, 92 & 93, and 103 & 104: Added minimum and maximum fields to sample inventory.
 
 •   Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.
+1) InhousePartForm.html, Lines 23-28: Added additional text inputs for customizable maximum and minimum inventory values.
+2) OutsourcedPartForm.html, Lines 24-29: Added additional text inputs for customizable maximum and minimum inventory values.
 
 •   Rename the file the persistent storage is saved to.
+1) Update application.properties file, Line 6: Rename file from "spring-boot-h2-db102" to "WGUShopManagementDB".
 
 •   Modify the code to enforce that the inventory is between or at the minimum and maximum value.
-
+1) Part.java file, Lines 112-119: Added method to enforce that the inventory is between or at the minimum and maximum value.
+2) InHousePartServiceImpl.java, Line 54: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
+3) OutsourcedPartServiceImpl.java, Line 52: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
 
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
