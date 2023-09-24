@@ -105,16 +105,18 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(packaging);
         }
 
-        Product chess = new Product("chess",25.00,15);
-        Product checkers = new Product("checkers",25.00,15);
-        Product go = new Product("go",25.00,15);
-        Product monopoly = new Product("monopoly",25.00,15);
-        Product scrabble = new Product("scrabble",25.00,15);
-        productRepository.save(chess);
-        productRepository.save(checkers);
-        productRepository.save(go);
-        productRepository.save(monopoly);
-        productRepository.save(scrabble);
+        if(productRepository.count() == 0){
+            Product chess = new Product("chess",25.00,15);
+            Product checkers = new Product("checkers",25.00,15);
+            Product go = new Product("go",25.00,15);
+            Product monopoly = new Product("monopoly",25.00,15);
+            Product scrabble = new Product("scrabble",25.00,15);
+            productRepository.save(chess);
+            productRepository.save(checkers);
+            productRepository.save(go);
+            productRepository.save(monopoly);
+            productRepository.save(scrabble);
+        }
 
 
         System.out.println("Started in Bootstrap");
