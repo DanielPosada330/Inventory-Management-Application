@@ -19,12 +19,12 @@ public class BuyNowButtonController {
 
 
     //Get mapping showing in url link
-    @GetMapping("/purchaseConfirmation")
+    @GetMapping("/buyproduct")
     //String method to verify the buy now button returns a valid purchase
-    public String buyNow(@RequestParam("buyProduct") int productID){
+    public String buyNow(@RequestParam("productID") int initalProductID){
 
         ProductService productService = context.getBean(ProductServiceImpl.class);
-        Product finalProductAmount = productService.findById(productID);
+        Product finalProductAmount = productService.findById(initalProductID);
 
         boolean purchaseConfirmation = finalProductAmount.buyProduct();
         if ( purchaseConfirmation ) {
