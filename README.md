@@ -18,7 +18,7 @@ Note: Do not remove any elements that were included in the screen. You may add a
 
 Changes: 
 1) mainscreen.html, Line 14: updated tab title from "My Bicycle Shop" to "Aldani Board Games".
-2) mainscreen.html, Line 19: updated title from "Shop" to "Main Board Game Order Menu".
+2) mainscreen.html, Line 19: updated title from "Shop" to "Aldani Board Games".
 
 D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 1) Create about.html
@@ -75,9 +75,9 @@ G. Modify the parts to track maximum and minimum inventory by doing the followin
 1) Update application.properties file, Line 6: Rename file from "spring-boot-h2-db102" to "WGUShopManagementDB".
 
 •   Modify the code to enforce that the inventory is between or at the minimum and maximum value.
-1) Part.java file, Lines 113-121: Added method to enforce that the inventory is between or at the minimum and maximum value, and to return boolean value to check if method was used.
-2) InHousePartServiceImpl.java, Line 54: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
-3) OutsourcedPartServiceImpl.java, Line 52: Added previously described method from Part.java file to ensure inventory is within range prior to saving to repository.
+1) Part.java file, Lines 113-126: Added methods to enforce that the inventory is between or at the minimum and maximum value, and to return integer values to check if methods were used to redirect to correct html page.
+2) InHousePartServiceImpl.java, Lines 54 & 55: Added previously described methods from Part.java file to ensure inventory is within range prior to saving to repository.
+3) OutsourcedPartServiceImpl.java, Lines 52 & 53: Added previously described methods from Part.java file to ensure inventory is within range prior to saving to repository.
 
 H. Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
