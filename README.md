@@ -11,6 +11,9 @@ For this project, you will use the Integrated Development Environment (IDE) link
 ## Shop Type, Products and Parts
 The shop type for this project will be for board games. The products will be Chess, Checkers, Go, Monopoly and Scrabble. The in-house parts are as follows: board to play on, game pieces to play with, user manual with information on how to play the game and pertinent information. The outsourced parts are as follows: dice, and finally the packaging material.
 ## Rubric Instructions  
+Shown below are the changes made organized into separate sections corresponding with the rubric. The comments will show as follows:
+File, Line numbers, change made. Each change is listed in numerical order under each of the corresponding alphabetic portions of the rubric.
+
 C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
 
