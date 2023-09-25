@@ -49,7 +49,8 @@ public class OutsourcedPartServiceImpl implements OutsourcedPartService{
 
     @Override
     public void save(OutsourcedPart thePart) {
-        thePart.validInvAmount();
+        thePart.validMinInvAmount();
+        thePart.validMaxInvAmount();
         partRepository.save(thePart);
 
     }
