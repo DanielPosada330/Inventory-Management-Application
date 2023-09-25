@@ -43,10 +43,10 @@ public class AddOutsourcedPartController {
         if(bindingResult.hasErrors()){
             return "OutsourcedPartForm";
         }
-        else if(part.validInvAmount() == true){
+        else if(part.validMinInvAmount() == 1){
             return "belowMinInv";
         }
-        else if(part.validInvAmount() == false){
+        else if(part.validMaxInvAmount() == 2){
             return "aboveMaxInv";
         }
         else{
